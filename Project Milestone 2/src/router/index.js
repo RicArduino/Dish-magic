@@ -2,6 +2,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SignUp from '../views/SignUp.vue'
 import LogIn from '../views/LogIn.vue'
+import MyProfil from'../views/MyProfil.vue'
+
 
 const routes = [
   {
@@ -28,6 +30,13 @@ const routes = [
     name: 'login',
     component: LogIn
   }
+  ,
+  {
+    path: '/myprofil',
+    name: 'myprofil',
+    component : MyProfil,
+  },
+
 ]
 
 const router = createRouter({
