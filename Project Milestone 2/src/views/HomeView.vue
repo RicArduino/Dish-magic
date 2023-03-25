@@ -239,7 +239,7 @@ body {
   border: #5c5c5c39 6px solid;
   margin: 20px;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: #4d1010;
   max-width: 300px;
   padding-left: 10px;
   padding-right: 10px;
