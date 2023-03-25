@@ -1,7 +1,7 @@
 <template>
-  <div>
- <Navbar /> 
 
+ <Navbar /> 
+  
   <div class="container-1">
     <img class="deco-1" src="../assets/deco1.png" alt="deco1" />
     <img class="deco-2" src="../assets/deco2.png" alt="deco2" />
@@ -26,7 +26,8 @@
   </div>
 
 <Footer/>
-</div>
+
+
 
 
 </template>
@@ -50,32 +51,32 @@ export default {
       {
       "id": 1,
         "name": "Lumpia with Suace",
-        "image": "dish-1.png"
+        "image": "dish2.png"
         },
         {
         "id": 2,
         "name": "Egg and Cucumbee",
-        "image": "dish-4.png"
+        "image": "dish4.png"
         },
         {
         "id": 3,
         "name": "Tofu Chili",
-        "image": "dish-5.png"
+        "image": "dish3.png"
         },
         {
         "id": 4,
         "name": "Lumpia with Suace",
-        "image": "dish-1.png"
+        "image": "dish2.png"
         },
         {
         "id": 5,
         "name": "Egg and Cucumbee",
-        "image": "dish-4.png"
+        "image": "dish4.png"
         },
         {
         "id": 6,
         "name": "Tofu Chili",
-        "image": "dish-5.png"
+        "image": "dish3.png"
         }
       ]
 
