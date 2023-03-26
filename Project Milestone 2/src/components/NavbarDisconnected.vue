@@ -9,7 +9,7 @@
                     <li> <router-link  to="/catalog">Catalog </router-link> </li>
                     <li><a href="#">Random</a></li>
                     <li><a href="#">Book</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><router-link  to="/about">About </router-link></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <div class="btn-container">
