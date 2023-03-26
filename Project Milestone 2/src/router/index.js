@@ -2,6 +2,9 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SignUp from '../views/SignUp.vue'
 import LogIn from '../views/LogIn.vue'
+import Catalog from '../views/Catalog.vue'
+
+
 
 const routes = [
   {
@@ -20,13 +23,17 @@ const routes = [
   { 
     path: '/signup',
     name: 'signup',
-
     component: SignUp
   },
   {
     path: '/login',
     name: 'login',
     component: LogIn
+  },
+  {
+    path:'/catalog',
+    name: 'catalog',
+    component: Catalog
   }
 ]
 
@@ -36,3 +43,4 @@ const router = createRouter({
 })
 
 export default router
+

@@ -1,24 +1,8 @@
 <template>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     
-        <title>Sign Up</title>
-    </head>
     
-    <body>
-        <header>
-    
-        </header>
-        <div class="wrapper">
-            <!-- Votre contenu ici -->
-        </div>
-        <footer>
+    <div class="footer">
             <nav>
                 <div class="footer-list">
                     <h1 class="title-bold">Dish Magic</h1>
@@ -54,9 +38,9 @@
                 </div>
     
             </nav>
-        </footer>
+        </div>
     
-    </body>
+   
         
         </template>
         
@@ -66,8 +50,8 @@
         
         <style scoped lang="scss">
     
-    
-    footer {
+    @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");    
+    .footer {
         height: 330px;
         background-color: #FF902B;
         /* Définit la hauteur du footer */
