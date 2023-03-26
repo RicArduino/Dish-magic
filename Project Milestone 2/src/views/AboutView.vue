@@ -1,4 +1,5 @@
 <template>
+  <router-view></router-view>
   <Navbar/>
 
   <img id="vector1" src="../assets/Vector.png" alt="vec">

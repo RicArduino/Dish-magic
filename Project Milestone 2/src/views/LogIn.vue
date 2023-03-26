@@ -1,5 +1,5 @@
 <template>
-  <router-view />
+  <router-view></router-view>
       <Navbar />
             <div class="wrapper">
               <div class="container">
