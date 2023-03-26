@@ -29,11 +29,11 @@ export default function HomeView() {
               Discover recipe about all type of culture
             </h1>
             <p class="container-1-1-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              The catalog contains all the recipes of Magic Dish. 
+              It allows you to search for a recipe among all those available
             </p>
-            <button class="container-1-1-button-1">Catalog</button>
-            <button class="container-1-1-button-2">Random recipe</button>
+            <button class="container-1-1-button-1"><a href="#/Catalog">Catalog</a></button>
+
             <img class="container-1-1-dish-1" src={dish1} alt="dish1" />
           </div>
         </div>
@@ -41,8 +41,8 @@ export default function HomeView() {
           <div class="container-2-1">
             <h1>Favorite Dishes</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Here are the most popular recipes of the moment. 
+              You can find them in the catalog
             </p>
           </div>
           <div class="container-2-2">
