@@ -1,18 +1,18 @@
 <template>
-    <div class="card">
+  <div class="card">
 
-        <div class="b-card">
-            <div b-card-img>
-              <img :class="recipesimg" :src="require('../assets/'+ recipe.image)" :alt="cof">
-            </div>
-            <div b-card class="name">
-              <p class="b-card-text"> {{ recipe.name }} </p>
-            </div>
-        </div>
-        
-        
-    </div>
-    
+      <div class="b-card">
+          <div b-card-img>
+            <img :class="recipesimg" :src="require('../assets/'+ recipe.image)" :alt="cof">
+          </div>
+          <div b-card class="name">
+            <p class="b-card-text"> {{ recipe.name }} </p>
+          </div>
+      </div>
+      
+      
+  </div>
+  
 </template>
 
 <script>

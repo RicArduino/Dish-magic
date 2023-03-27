@@ -1,4 +1,4 @@
-<template>
+cd <template>
   <router-view></router-view>
 
  <Navbar /> 
@@ -38,9 +38,11 @@
 import Navbar from "@/components/NavbarDisconnected.vue";
 import Footer from "@/components/FooterTest.vue";
 import RecipesCard from '@/components/RecipesCard.vue';
+import RecipeDataService from '@/services/RecipeDataService.js';
+
 
 export default {
-  name: 'HomeView',
+  name: 'CatalogView',
   components: {
     RecipesCard, Footer, Navbar
    
@@ -79,12 +81,27 @@ export default {
         "name": "Tofu Chili",
         "image": "dish3.png"
         }
-      ]
-
-
+      ],
+       recipesv1: []
     }
+  }, 
+  methods :{
+        getRecipes()  {
+          RecipeDataService.getAll()
+            .then(response => {
+              console.log(response.data)
+              this.recipesv1 = response.data
+            })
+            .catch(e => {
+              console.log(e)
+            })
+        }
+      },
+   /*  onBeforeMount: function(){
+      this.getRecipes()
+    }, */
   }
-}
+
 </script>
 
 <style>
@@ -95,6 +112,8 @@ export default {
   top: 0;
   height: 1000px;
   background: white;
+    z-index:-1;
+
 }
 
 .deco-1 {
@@ -120,12 +139,14 @@ export default {
   max-width: 300px;
   max-height: 300px;
   object-fit: cover;
+  
 }
 
 .container-2 {
   top: 50%;
   height: 1874px;
   background: transparent;
+  z-index:-1;
 }
 
 .deco-10 {
@@ -168,6 +189,7 @@ top: 170.62%;
   margin-left:100px;
   margin-top:120px;
   margin-bottom:80px;
+  z-index: 1;
 }
 
 .bttn {

@@ -55,8 +55,10 @@
         height: 330px;
         background-color: #FF902B;
         /* Définit la hauteur du footer */
-        margin-top: auto;
         /* Place le footer en haut de son conteneur */
+        margin-bottom: 0%;
+        padding-bottom: 0;
+        position : relative;
     }
     
     nav {

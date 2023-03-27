@@ -1,23 +1,21 @@
 <template>
 
 
-        <div class="navbar">
-            <nav>
-                <img src="../assets/logo1.png" alt="logo" class="logo">
-                <ul>
-                    <li><a href="#"><span>Home</span></a></li>
-                    <li> <router-link  to="/catalog">Catalog </router-link> </li>
-                    <li><a href="#">Random</a></li>
-                    <li><a href="#">Book</a></li>
-                    <li><router-link  to="/about">About </router-link></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <div class="btn-container">
-                    <router-link  class="btn btn-outline-primary" to="/signup">Sign Up</router-link> 
-                    <router-link  class="btn btn-outline-primary" to="/login">Log In</router-link>
-                </div>
-            </nav>
-        </div>
+    <div class="navbarPerso">
+        <nav class="navPerso">
+            <img src="../assets/logo1.png" alt="logo" class="logoPerso">
+            <ul>
+                <li><a href="#"><span class="spanPerso">Home</span></a></li>
+                <li> <router-link  to="/catalog">Catalog </router-link> </li>
+                <li><router-link  to="/about">About </router-link></li>
+
+            </ul>
+            <div class="btn-containerPerso">
+                <router-link  class="btnPerso btn-outline-primary" to="/signup">Sign Up</router-link> 
+                <router-link  class="btnPerso btn-outline-primary" to="/login">Log In</router-link>
+            </div>
+        </nav>
+    </div>
 
 
 
@@ -29,59 +27,59 @@
 </script>
 
 <style scoped lang="scss">
-.navbar {
-    width: 100%;
-    font-family: 'Inter', sans-serif;
+.navbarPerso {
+width: 100%;
+font-family: 'Inter', sans-serif;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 5%;
-    padding-right: 5%;
+.navPerso {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-left: 5%;
+padding-right: 5%;
 }
 
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
+.navPerso ul li {
+list-style-type: none;
+display: inline-block;
+padding: 10px 20px;
 }
 
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
+.navPerso ul li a {
+color: black;
+text-decoration: none;
+font-weight: bold;
 }
 
-span {
-    color: #FF902B;
+.spanPerso {
+color: #FF902B;
 }
 
-nav ul li a:hover {
-    color: #FF902B;
+.navPerso ul li a:hover {
+color: #FF902B;
 }
 
-.btn{
-    background-color: #FF902B;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
+.btnPerso{
+background-color: #FF902B;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+text-decoration: none;
 }
 
-  .logo{
-    max-width: 200px;
-    max-height: 100px;
-  }
-  .btn-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 200px;}
+.logoPerso{
+max-width: 200px;
+max-height: 100px;
+}
+.btn-containerPerso{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 200px;}
 
 </style>
 

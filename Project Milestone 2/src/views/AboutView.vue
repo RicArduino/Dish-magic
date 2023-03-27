@@ -39,7 +39,7 @@
         <img class="photos" src="../assets/elyas.jpeg" alt="per">
       </div>
         <div class="text">
-          <p class="name"> <span>Elyas truc</span> </p>
+          <p class="name"> <span>Elyas Mekchiche</span> </p>
           <p class="description"> RicArduino on GitHub </p>
         </div>
       </div>

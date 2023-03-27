@@ -1,17 +1,20 @@
 module.exports = (app) => {
-    const recipe = require("../controllers/recipe.controller.js");
-    const router = require("express").Router();
-  
-    router.post("/", recipe.create);
+  const recipe = require("../controllers/recipe.controller.js");
+  const router = require("express").Router();
 
-    router.get("/", recipe.findAll);
+  router.post("/", recipe.create);
 
-    router.get("/:id", recipe.findOne);
+  router.get("/", recipe.findAll);
 
-    router.put("/:id", recipe.update);
+  router.get("/:id", recipe.findOne);
 
-    router.delete("/:id", recipe.delete);
+  router.put("/:id", recipe.update);
 
-    app.use("/api/recipe", router);
-    
-  }
+  router.delete("/:id", recipe.delete);
+
+  router.get("/origin", recipe.FindByOrigin);
+
+  router.get("/community", recipe.FindByCommunity);
+
+  app.use("/api/recipe", router);
+};

@@ -16,6 +16,7 @@ import dish3 from "../assets/dish3.png";
 import dish4 from "../assets/dish4.png";
 
 
+
 export default function HomeView() {
   return (
     <>
@@ -58,7 +59,7 @@ export default function HomeView() {
                     <p class="product_rate">44 K</p>
                   </div>
                   <div class="card_text">
-                    <p class="product_description">Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <p class="product_description">Cook the chicken and the pepper togather and put it on tortillas then bake it on oven for ten min</p>
                   </div>
                 </div>
               </div>
@@ -72,7 +73,7 @@ export default function HomeView() {
                     <p class="product_rate">21 K</p>
                   </div>
                   <div class="card_text">
-                    <p class="product_description">Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <p class="product_description">Put all ingredient on a pan and cook it for ten min</p>
                   </div>
                 </div>
               </div>
@@ -86,7 +87,7 @@ export default function HomeView() {
                     <p class="product_rate">36 K</p>
                   </div>
                   <div class="card_text">
-                    <p class="product_description">Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <p class="product_description">Cut the cucomber and cook the egg then mix it</p>
                   </div>
                 </div>
               </div>
@@ -98,6 +99,7 @@ export default function HomeView() {
       <Footer />
     </>
   );
+  
 }
 </script>
 <style>
@@ -191,8 +193,10 @@ body {
   left: 24px;
   top: 400px;
   background-color: #101a24;
-}
+  text-decoration: none;
+  color: #ffffff;
 
+}
 .container-1-1-button-2 {
   position: absolute;
   width: 167px;

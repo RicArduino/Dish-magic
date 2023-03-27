@@ -5,7 +5,7 @@ const app = express();
 const cookieParser = require("cookie-parser");
 
 const corsOptions = {
-  origin: "http://localhost:8081",
+  origin: "http://localhost:8081", //change me
   credentials: true,
 };
 
@@ -20,14 +20,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to the movie_list database !" });
+  res.json({ message: "Welcome to Dish database !" });
 });
 require("./app/routes/users.route")(app);
 require("./app/routes/recipe.route")(app);
 require("./app/routes/steps.route")(app);
-require("./app/routes/contain.route")(app);
-require("./app/routes/dividedin.route")(app);
-
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

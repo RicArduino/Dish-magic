@@ -13,44 +13,32 @@ exports.findAll = (req, res) => {
 };
 
 exports.create = async (req, res) => {
-  if (
-    !req.body.name ||
-    !req.body.lastname ||
-    !req.body.email ||
-    !req.body.password ||
-    !req.body.phone
-  ) {
-    res.status(400).send({
-      message: "User must have name, email and name !",
+  if (req.body.password.length < 6) {
+    res.status(401).send({
+      message: "Password must be at least 6 characters long !",
     });
     return;
   }
-  if(req.body.password.length < 6){
-    res.status(401).send({
-        message: "Password must be at least 6 characters long !",
-        });
-        return;
-    }
 
-    if(req.body.password.length > 20){
-        res.status(402).send({
-            message: "Password must be less than 20 characters long !",
-            });
-            return;
-        }
+  if (req.body.password.length > 20) {
+    res.status(402).send({
+      message: "Password must be less than 20 characters long !",
+    });
+    return;
+  }
 
-    if (await User.findOne({ where: { email: req.body.email } })) {
-      res.status(403).send({
-        message: "User already exists !",
-      });
-      return;
-    } 
-    if (await User.findOne({ where: { phone: req.body.phone } })) {
-      res.status(404).send({
-        message: "Phone already exists !",
-      });
-      return;
-    }
+  if (await User.findOne({ where: { email: req.body.email } })) {
+    res.status(403).send({
+      message: "User already exists !",
+    });
+    return;
+  }
+  if (await User.findOne({ where: { phone: req.body.phone } })) {
+    res.status(404).send({
+      message: "Phone already exists !",
+    });
+    return;
+  }
   const salt = await bcrypt.genSalt(10);
   const hashPassword = await bcrypt.hash(req.body.password, salt);
   await User.create({
@@ -85,7 +73,7 @@ exports.findOne = async (req, res, next) => {
     });
   }
   const token = jwt.sign({ id: user.id }, "secret");
-  console.log(token)
+  console.log(token);
   //withCredentials = true on the client side (http)
   res.cookie("jwt", token, {
     httpOnly: true,
@@ -130,4 +118,3 @@ exports.logout = async (req, res) => {
     message: "success",
   });
 };
-    

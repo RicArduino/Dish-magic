@@ -11,15 +11,7 @@ module.exports = (sequelize,Sequelize) => {
         },
         time: {
             type: Sequelize.INTEGER
-        },
-        nbrpeople: {
-            type: Sequelize.INTEGER
-        },
-        community: {
-            type: Sequelize.BOOLEAN
-        }
-        
-
+        },    
     });
     return Recipe;
 };
